@@ -1,0 +1,49 @@
+@import 'variables';
+@import 'mixins';
+
+body{
+    
+}
+nav{
+    background-color:$navBackgroundColor;
+    
+    ul{
+       
+        list-style: none; 
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        display: inline-block;
+        a{
+            text-decoration: none;
+            color: $fontColor;
+            padding: 14px;
+            display: inline-block;
+        }
+    }
+}
+
+#banner{
+    height: 400px;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+}
+
+#services{
+    margin-top: 10px;
+    .box{
+        @include grid(4,1%);
+        float: left;
+        height: 200px;
+        text-align: center;
+    }
+    
+    img{
+        width: 50%;
+        border-radius:50%;
+        
+    }
+}
